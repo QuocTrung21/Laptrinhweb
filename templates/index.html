@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block title %}Nguyễn Quốc Trung - Lập Trình Mạng & Java Developer{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-subtitle"><span class="highlight">NGUYEN QUOC TRUNG</span></h2>
+                <p class="hero-description">
+                    Lập Trình Mạng với Java & JavaScript<br>
+                    Chia sẻ kiến thức từ các khóa học về Socket, HTTP, WebSocket
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="/blog" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> Đọc Bài Viết
+                    </a>
+                    <a href="/contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Liên Hệ Tôi
+                    </a>
+                </div>
+
+                <p class="hero-motto">Today's effort is the foundation for tomorrow's success.</p>
+                
+                <div class="social-links-hero">
+                    <a href="mailto:tuananh300604@gmail.com" target="_blank" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/tuananhcntt1" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu%E1%BA%A5n-anh-ng%C3%B4-5a0319318" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='assets/images/avt.jpg') }}" alt="Avatar" class="avatar-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Posts Section -->
+<section class="featured-posts">
+    <div class="container">
+        <h2 class="section-title">Bài Viết Nổi Bật</h2>
+        <p class="section-subtitle">Những bài viết giúp bạn hiểu sâu về lập trình mạng và Java/JavaScript</p>
+        
+        <div class="posts-grid">
+            <article class="featured-post-card">
+                <img src="/static/assets/images/blog_thumbnails/java_socket.jpg" alt="Java Socket" class="featured-post-image">
+                <div class="post-content">
+                    <span class="post-category">Java</span>
+                    <h3 class="post-title">Nhập Môn Lập Trình Mạng với Java - Socket Programming</h3>
+                    <p class="post-description">Tìm hiểu cơ bản về Socket trong Java, cách tạo kết nối TCP/IP giữa client và server.</p>
+                    <div class="post-footer">
+                        <span class="post-date">
+                            <i class="fas fa-calendar-alt"></i> 20 Tháng 12, 2024
+                        </span>
+                        <a href="/blog/1" class="read-more">Đọc thêm →</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="featured-post-card">
+                <img src="/static/assets/images/blog_thumbnails/java_server.jpg" alt="Java Server" class="featured-post-image">
+                <div class="post-content">
+                    <span class="post-category">Java</span>
+                    <h3 class="post-title">Xây Dựng Server HTTP Đơn Giản Với Java</h3>
+                    <p class="post-description">Hướng dẫn từng bước xây dựng một web server HTTP đơn giản bằng Java từ đầu.</p>
+                    <div class="post-footer">
+                        <span class="post-date">
+                            <i class="fas fa-calendar-alt"></i> 18 Tháng 12, 2024
+                        </span>
+                        <a href="/blog/2" class="read-more">Đọc thêm →</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="featured-post-card">
+                <img src="/static/assets/images/blog_thumbnails/js_fetch.jpg" alt="JavaScript Fetch" class="featured-post-image">
+                <div class="post-content">
+                    <span class="post-category">JavaScript</span>
+                    <h3 class="post-title">JavaScript Fetch API - Giao Tiếp HTTP Đơn Giản</h3>
+                    <p class="post-description">Học cách sử dụng Fetch API để gửi yêu cầu HTTP từ trình duyệt tới server một cách hiệu quả.</p>
+                    <div class="post-footer">
+                        <span class="post-date">
+                            <i class="fas fa-calendar-alt"></i> 05 Tháng 12, 2024
+                        </span>
+                        <a href="/blog/3" class="read-more">Đọc thêm →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="view-all-posts">
+            <a href="/blog" class="btn btn-primary">
+                Xem Tất Cả Bài Viết
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Kỹ Năng Chính</h2>
+        <p class="section-subtitle">Lĩnh vực chuyên sâu về lập trình mạng và web development</p>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Network Programming</h3>
+                <p>Socket, TCP/UDP, HTTP Protocol</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java</h3>
+                <p>Multithreading, Network API, Server</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <p>Fetch API, WebSocket, Async/Await</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Client-Server</h3>
+                <p>REST API, Real-time Communication</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>Web Frontend</h3>
+                <p>HTML5, CSS3, Responsive Design</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-git"></i>
+                </div>
+                <h3>Git & GitHub</h3>
+                <p>Version Control, Collaboration</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Bạn Muốn Tìm Hiểu Thêm?</h2>
+        <p>Hãy đọc các bài viết chi tiết của tôi về lập trình mạng, Java và JavaScript.</p>
+        <a href="/blog" class="btn btn-primary btn-lg">
+            <i class="fas fa-book-open"></i> Xem Blog
+        </a>
+    </div>
+</section>
+{% endblock %}
