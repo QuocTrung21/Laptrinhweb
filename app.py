@@ -11,9 +11,6 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key-here'
-# Project metadata
-PROJECT_AUTHOR = 'Nguyễn Quốc Trung'
-PROJECT_EMAIL = 'quoctrung@email.com'
 
 # Sample blog posts data
 BLOG_POSTS = [
