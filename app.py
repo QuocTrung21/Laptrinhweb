@@ -18,7 +18,7 @@ BLOG_POSTS = [
         'id': 1,
         'title': 'Nhập Môn Lập Trình Mạng với Java - Socket Programming',
         'description': 'Tìm hiểu cơ bản về Socket trong Java, cách tạo kết nối TCP/IP giữa client và server.',
-        'image': '/static/assets/images/blog_thumbnails/java_socket.jpg',
+        'image': '/static/assets/images/blog_thumbnails/java_basic_1.jpg',
         'date': '2024-12-20',
         'category': 'Java',
         'content': 'Socket là nền tảng của lập trình mạng...'
@@ -27,7 +27,7 @@ BLOG_POSTS = [
         'id': 2,
         'title': 'Xây Dựng Server HTTP Đơn Giản Với Java',
         'description': 'Hướng dẫn từng bước xây dựng một web server HTTP đơn giản bằng Java từ đầu.',
-        'image': '/static/assets/images/blog_thumbnails/java_server.jpg',
+        'image': '/static/assets/images/blog_thumbnails/java_oop.jpg',
         'date': '2024-12-18',
         'category': 'Java',
         'content': 'Để hiểu HTTP server hoạt động như thế nào...'
@@ -36,7 +36,7 @@ BLOG_POSTS = [
         'id': 3,
         'title': 'Java Network Interface: Quản Lý Kết Nối Mạng',
         'description': 'Tìm hiểu cách sử dụng Java NetworkInterface để truy cập thông tin mạng của hệ thống.',
-        'image': '/static/assets/images/blog_thumbnails/java_network.jpg',
+        'image': '/static/assets/images/blog_thumbnails/java_collections.jpg',
         'date': '2024-12-15',
         'category': 'Java',
         'content': 'NetworkInterface cung cấp thông tin...'
@@ -45,7 +45,7 @@ BLOG_POSTS = [
         'id': 4,
         'title': 'UDP Programming trong Java - Giao Tiếp Không Liên Kết',
         'description': 'Khám phá lập trình UDP trong Java, sử dụng DatagramSocket cho các ứng dụng thời gian thực.',
-        'image': '/static/assets/images/blog_thumbnails/java_udp.jpg',
+        'image': '/static/assets/images/blog_thumbnails/java_stream.jpg',
         'date': '2024-12-12',
         'category': 'Java',
         'content': 'UDP là giao thức không liên kết...'
@@ -54,7 +54,7 @@ BLOG_POSTS = [
         'id': 5,
         'title': 'Java Multithreading trong Network Server',
         'description': 'Hướng dẫn sử dụng Multithreading để xử lý nhiều client đồng thời trong server ứng dụng.',
-        'image': '/static/assets/images/blog_thumbnails/java_threading.jpg',
+        'image': '/static/assets/images/blog_thumbnails/java_patterns.jpg',
         'date': '2024-12-10',
         'category': 'Java',
         'content': 'Multithreading cho phép server...'
@@ -63,7 +63,7 @@ BLOG_POSTS = [
         'id': 6,
         'title': 'JavaScript Fetch API - Giao Tiếp HTTP Đơn Giản',
         'description': 'Học cách sử dụng Fetch API để gửi yêu cầu HTTP từ trình duyệt tới server một cách hiệu quả.',
-        'image': '/static/assets/images/blog_thumbnails/js_fetch.jpg',
+        'image': '/static/assets/images/blog_thumbnails/js_es6.jpg',
         'date': '2024-12-08',
         'category': 'JavaScript',
         'content': 'Fetch API là phương thức hiện đại...'
@@ -81,7 +81,7 @@ BLOG_POSTS = [
         'id': 8,
         'title': 'WebSocket với JavaScript - Giao Tiếp Real-time',
         'description': 'Khám phá WebSocket API để xây dựng ứng dụng giao tiếp thời gian thực giữa client và server.',
-        'image': '/static/assets/images/blog_thumbnails/js_websocket.jpg',
+        'image': '/static/assets/images/blog_thumbnails/js_dom.jpg',
         'date': '2024-12-02',
         'category': 'JavaScript',
         'content': 'WebSocket cung cấp kết nối...'
@@ -90,7 +90,7 @@ BLOG_POSTS = [
         'id': 9,
         'title': 'XMLHttpRequest vs Fetch - So Sánh Và Lựa Chọn',
         'description': 'So sánh chi tiết giữa XMLHttpRequest cũ và Fetch API mới để hiểu cách tiến hóa của lập trình mạng web.',
-        'image': '/static/assets/images/blog_thumbnails/js_xhr.jpg',
+        'image': '/static/assets/images/blog_thumbnails/react_hooks.jpg',
         'date': '2024-11-28',
         'category': 'JavaScript',
         'content': 'XMLHttpRequest từng là...'
@@ -99,7 +99,7 @@ BLOG_POSTS = [
         'id': 10,
         'title': 'Xây Dựng REST API Client Với JavaScript',
         'description': 'Hướng dẫn tạo client gọi REST API, xử lý response, error handling và authentication.',
-        'image': '/static/assets/images/blog_thumbnails/js_rest.jpg',
+        'image': '/static/assets/images/blog_thumbnails/css_layout.jpg',
         'date': '2024-11-25',
         'category': 'JavaScript',
         'content': 'REST API client là thành phần...'

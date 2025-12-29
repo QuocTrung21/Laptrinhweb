@@ -1,6 +1,6 @@
 /**
  * Personal Blog - Main JavaScript File
- * Ngô Tuấn Anh
+ * Nguyễn Quốc Trung
  * 
  * Features:
  * - Mobile menu toggle
