@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0ea5a4" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <!-- Geometric motif: connected hexagon -->
+  <g transform="translate(20,20)" opacity="0.14">
+    <polygon points="60,10 120,40 120,100 60,130 0,100 0,40" fill="url(#grad)" />
+    <circle cx="60" cy="70" r="14" fill="#fff" opacity="0.6" />
+  </g>
+
+  <!-- Text block -->
+  <g transform="translate(180,110)">
+    <text x="0" y="0" font-family="Segoe UI, Roboto, Arial, sans-serif" font-weight="700" font-size="36" fill="#073c3a">Nguyễn Quốc Trung</text>
+    <text x="0" y="36" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="14" fill="#0ea5a4">Lập Trình Mạng · Java · JavaScript</text>
+  </g>
+</svg>

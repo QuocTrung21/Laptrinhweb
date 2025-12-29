@@ -2,8 +2,14 @@
 Generate placeholder images for blog posts
 """
 
-from PIL import Image, ImageDraw, ImageFont
 import os
+
+try:
+    from PIL import Image, ImageDraw, ImageFont
+except Exception as e:
+    raise RuntimeError(
+        "Pillow is required to run this script. Install with: python -m pip install Pillow"
+    ) from e
 
 # Tạo thư mục nếu chưa tồn tại
 os.makedirs('static/assets/images/blog_thumbnails', exist_ok=True)
@@ -48,16 +54,33 @@ def create_placeholder_image(filename, color, title):
     # Thêm text (sử dụng font mặc định)
     text = title
     text_color = 'white'
-    
-    # Vẽ text ở giữa ảnh
-    bbox = draw.textbbox((0, 0), text)
-    text_width = bbox[2] - bbox[0]
-    text_height = bbox[3] - bbox[1]
-    
+
+    # Sử dụng font mặc định (portable)
+    try:
+        font = ImageFont.load_default()
+    except Exception:
+        font = None
+
+    # Tính kích thước text (hỗ trợ multiline)
+    try:
+        bbox = draw.multiline_textbbox((0, 0), text, font=font, spacing=6)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+    except AttributeError:
+        # Fallback cho Pillow cũ: dùng textsize / multiline_textsize
+        try:
+            text_width, text_height = draw.multiline_textsize(text, font=font)
+        except Exception:
+            text_width, text_height = draw.textsize(text, font=font)
+
     x = (width - text_width) // 2
     y = (height - text_height) // 2
-    
-    draw.text((x, y), text, fill=text_color)
+
+    # Vẽ multiline text căn giữa
+    try:
+        draw.multiline_text((x, y), text, fill=text_color, font=font, align='center', spacing=6)
+    except Exception:
+        draw.text((x, y), text, fill=text_color, font=font)
     
     # Lưu ảnh
     image.save(f'static/assets/images/blog_thumbnails/{filename}.jpg', 'JPEG', quality=85)
