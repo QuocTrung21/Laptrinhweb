@@ -106,8 +106,8 @@ project/
 
 ### 1. Clone Repository
 ```bash
-git clone <repository-url>
-cd tuananhcntt1.github.io-main
+git clone https://github.com/QuocTrung21/Laptrinhweb.git
+cd Laptrinhweb
 ```
 
 ### 2. Cài Đặt Python Dependencies
@@ -204,8 +204,8 @@ http://127.0.0.1:5000
 
 **Tác Giả:** Nguyễn Quốc Trung  
 **Email:** quoctrung@email.com  
-**GitHub:** https://github.com/quoctrung  
-**LinkedIn:** https://linkedin.com/in/quoctrung
+**GitHub Repository:** https://github.com/QuocTrung21/Laptrinhweb  
+**GitHub:** https://github.com/QuocTrung21
 
 ---
 
